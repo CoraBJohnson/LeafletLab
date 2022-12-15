@@ -105,9 +105,10 @@ function getData(map) {
                                 $("#panel").html(panelContent);
                             }
                         });
+                        createSequenceControls(map, year);
                         //return circle markers to L.geoJson pointToLayer
                         return layer;
-                createSequenceControls(map);
+
                     }
                 }).addTo(map);
             }
